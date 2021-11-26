@@ -1,9 +1,8 @@
+#!/usr/bin/env python 3
 # -*- coding: utf-8 -*-
 """
 start / stop / status system service 
 """
-#!/bin/python3
-
 import subprocess
 import sys
 
