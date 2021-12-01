@@ -19,7 +19,7 @@ def Systemctl(service, cmd):
             if(stat == 0):  # if 0 (active), print "Active"
                 print("Active")
         else:
-            stat = subprocess.call(["sudo systemctl", "--quiet", cmd, service])
+            stat = subprocess.call(["sudo","systemctl", "--quiet", cmd, service])
             if(stat == 0):  
                 print("Success")
     
