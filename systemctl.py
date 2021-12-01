@@ -49,5 +49,6 @@ class SystemdService(object):
 
 
 if __name__ == '__main__':
-    monitor = SystemdService(sys.argv[1])
+  # monitor = SystemdService(sys.argv[1])
+   monitor = SystemdService(sys.argv[1])
     monitor.is_active()
