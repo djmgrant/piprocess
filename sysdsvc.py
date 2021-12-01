@@ -18,7 +18,7 @@ def Systemctl(service, cmd):
         print('exec cmd',service, cmd)
         
         if cmd == 'status':
-            stat = subprocess.call(["systemctl", "is-active", "--quiet", "ssh"])
+            stat = subprocess.call(["systemctl", "is-active", "--quiet", service])
             if(stat == 0):  # if 0 (active), print "Active"
                 print("Active")
         else:
